@@ -303,10 +303,11 @@
             <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>反转一个单链表，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL</span><br><span class="line">输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</span><br></pre></td></tr></table></figure></p>
 <h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>初始化：使用三个指针tempNext,processNode和tempBefore。其中processNode所指节点为当前循环所要处理的节点（初始为头节点），而tempBefore和tempNext分别指向当前处理节点的上一个节点和下一个节点（分别初始化NULL和processNode-&gt;next）<br><img src="/2019/03/29/Leetcode刷题记录之反转链表/image002.png" alt="Leetcode刷题记录之反转链表"><br>循环：</p>
 <ol>
-<li>每一次循环时，都将当前处理节点的next指向它的上一个节点，即tempBefore<br>![Leetcode刷题记录之反转链表/image004.png]</li>
-<li>之后依次更新tempBefore、processNode、tempNext（先后顺序不可以改变，确保不会断链），tempBefore=processNode，processNode= tempNext，tempNext= processNode-&gt;next。<br>![Leetcode刷题记录之反转链表/image006.png]</li>
+<li>每一次循环时，都将当前处理节点的next指向它的上一个节点，即tempBefore<br><img src="/2019/03/29/Leetcode刷题记录之反转链表/image004.png" alt="Leetcode刷题记录之反转链表"></li>
+<li>之后依次更新tempBefore、processNode、tempNext（先后顺序不可以改变，确保不会断链），tempBefore=processNode，processNode= tempNext，tempNext= processNode-&gt;next。<br><img src="/2019/03/29/Leetcode刷题记录之反转链表/image006.png" alt="Leetcode刷题记录之反转链表"></li>
 <li>当processNode更新到最后一个节点时，跳出循环。同时，将processNode的next指针指向tempBefore。</li>
 </ol>
+<p>hexo</p>
 
           
         
