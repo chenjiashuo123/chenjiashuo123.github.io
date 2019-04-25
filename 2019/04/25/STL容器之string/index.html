@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="STL中的stringstring是STL的字符串类型，在C语言中，我们通常用char 或者char[]字符数组来表示字符串。C++的string和C语言的char 有什么区别呢？   string是一个类，char *是指向字符的指针 string封装了char ,管理这个字符串，是一个char 类型的容器 string不用考虑内存释放和数组越界 string提供了一些列的字符串操作函数  st">
 <meta property="og:type" content="article">
 <meta property="og:title" content="STL容器之string">
 <meta property="og:url" content="http://yoursite.com/2019/04/25/STL容器之string/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="STL中的stringstring是STL的字符串类型，在C语言中，我们通常用char 或者char[]字符数组来表示字符串。C++的string和C语言的char 有什么区别呢？   string是一个类，char *是指向字符的指针 string封装了char ,管理这个字符串，是一个char 类型的容器 string不用考虑内存释放和数组越界 string提供了一些列的字符串操作函数  st">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-25T03:17:02.749Z">
+<meta property="og:updated_time" content="2019-04-25T03:32:06.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="STL容器之string">
+<meta name="twitter:description" content="STL中的stringstring是STL的字符串类型，在C语言中，我们通常用char 或者char[]字符数组来表示字符串。C++的string和C语言的char 有什么区别呢？   string是一个类，char *是指向字符的指针 string封装了char ,管理这个字符串，是一个char 类型的容器 string不用考虑内存释放和数组越界 string提供了一些列的字符串操作函数  st">
 
 
 
@@ -296,7 +299,14 @@
       
 
       
-        
+        <h3 id="STL中的string"><a href="#STL中的string" class="headerlink" title="STL中的string"></a>STL中的string</h3><p><strong>string</strong>是STL的字符串类型，在C语言中，我们通常用<strong>char</strong> <em>或者<strong>char[]</strong>字符数组来表示字符串。C++的<strong>string</strong>和C语言的<strong>char</strong> </em>有什么区别呢？ </p>
+<ol>
+<li><strong>string</strong>是一个类，<strong>char</strong> *是指向字符的指针</li>
+<li><strong>string</strong>封装了<strong>char</strong> <em>,管理这个字符串，是一个<strong>char</strong> </em>类型的容器</li>
+<li><strong>string</strong>不用考虑内存释放和数组越界</li>
+<li><strong>string</strong>提供了一些列的字符串操作函数</li>
+</ol>
+<h3 id="string的构造函数"><a href="#string的构造函数" class="headerlink" title="string的构造函数"></a>string的构造函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">int main(int argc, const char * argv[]) &#123;</span><br><span class="line">    </span><br><span class="line">    //通过const char * 初始化</span><br><span class="line">    string s1 = <span class="string">"aaaa"</span>;</span><br><span class="line">    </span><br><span class="line">    //构造函数初始化</span><br><span class="line">    string s2(<span class="string">"bbbbb"</span>);</span><br><span class="line">    </span><br><span class="line">    //通过拷贝构造函数来初始化对象s3</span><br><span class="line">    string s3 = s2;</span><br><span class="line">    </span><br><span class="line">    //用10个<span class="string">'a'</span>字符来初始化字符串</span><br><span class="line">    string s4(10, <span class="string">'a'</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -380,8 +390,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -423,6 +442,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#STL中的string"><span class="nav-number">1.</span> <span class="nav-text">STL中的string</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#string的构造函数"><span class="nav-number">2.</span> <span class="nav-text">string的构造函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
